@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/xiaomi/mido/mido-vendor.mk)
+$(call inherit-product, vendor/cmdc/wt89536/wt89536-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Add common definitions for Qualcomm
@@ -182,7 +182,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_mido
+    android.hardware.biometrics.fingerprint@2.3-service.cmdc_wt89536
 
 # FM
 PRODUCT_PACKAGES += \
@@ -220,7 +220,7 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.qti_recovery
 
 # Init
-$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_mido)
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_wt89536)
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -258,7 +258,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.xiaomi_mido
+    vendor.lineage.livedisplay@2.0-service.cmdc_wt89536
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -372,11 +372,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
 PRODUCT_PACKAGES += \
-    android.hardware.thermal-service.qti.xiaomi_mido
+    android.hardware.thermal-service.qti.cmdc_wt89536
 
 # Touch features
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_mido
+    vendor.lineage.touch@1.0-service.cmdc_wt89536
 
 # USB HAL
 PRODUCT_SOONG_NAMESPACES += \

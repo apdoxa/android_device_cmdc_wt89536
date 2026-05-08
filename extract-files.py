@@ -19,7 +19,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/xiaomi/mido',
+    'device/cmdc/wt89536',
     'hardware/qcom-caf/msm8953',
     'vendor/qcom/opensource/dataservices',
     'vendor/qcom/opensource/commonsys/display',
@@ -92,8 +92,8 @@ blob_fixups: blob_fixups_user_type = {
 
 # Define the module
 module = ExtractUtilsModule(
-    'mido',
-    'xiaomi',
+    'cmdc',
+    'wt89536',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,

@@ -19,25 +19,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
-# Inherit from mido device
+# Inherit from wt89536 device
 AB_OTA_UPDATER := false
-$(call inherit-product, device/xiaomi/mido/device.mk)
+$(call inherit-product, device/cmdc/wt89536/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := mido
-PRODUCT_NAME := lineage_mido
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 4
-PRODUCT_MANUFACTURER := Xiaomi
-TARGET_VENDOR := Xiaomi
-BOARD_VENDOR := Xiaomi
+PRODUCT_DEVICE := wt89536
+PRODUCT_NAME := lineage_wt89536
+PRODUCT_BRAND := CMCC
+PRODUCT_MODEL := N2
+PRODUCT_MANUFACTURER := CMCC
+TARGET_VENDOR := CMCC
+BOARD_VENDOR := CMCC
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-cmcc
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="mido-user 7.0 NRD90M V11.0.2.0.NCFMIXM release-keys" \
-    BuildFingerprint="xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys" \
-    DeviceProduct=mido
+    BuildDesc="wt89536-user 6.0.1 MMB29M eng.tanglinjun.20161223.195346 release-keys" \
+    BuildFingerprint="CMCC/wt89536/wt89536:6.0.1/MMB29M/12231955:user/release-keys" \
+    DeviceProduct=wt89536
