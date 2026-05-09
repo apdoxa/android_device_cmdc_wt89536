@@ -3,6 +3,7 @@
 #
 
 # Audio
+vendor.audio.feature.external_speaker_tfa.enable=true
 audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
 audio.offload.video=true
